@@ -14,6 +14,7 @@ import Toggle from "./components/Toggle";
 import Select from "./components/Select";
 import DatePicker from "./components/DatePicker";
 import TextArea from "./components/TextArea";
+import Header from './components/Header'
 
 function App() {
   const action = useNavigationType();
@@ -61,6 +62,7 @@ function App() {
         path="/"
         element={
           <>
+          <Header />
             <div
               style={{
                 display: "flex",
