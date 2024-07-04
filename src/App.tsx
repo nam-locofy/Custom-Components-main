@@ -66,11 +66,18 @@ function App() {
                 display: "flex",
                 flexDirection: "row",
                 gap: "30px",
-                backgroundColor: "#ffffff"
+                backgroundColor: "#ffffff",
+                flexWrap: 'wrap'
               }}
             >
-              <SideMenu activeTab={5} />
+              <div style={{
+                minWidth: '300px'
+              }}>
+              <SideMenu activeTab={2} />
+
               <Toggle />
+
+              </div>
               <Input text="Place Holder" />
               <Select text="Choose your option" />
               <DatePicker />
