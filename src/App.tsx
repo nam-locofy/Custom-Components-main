@@ -15,6 +15,7 @@ import Select from "./components/Select";
 import DatePicker from "./components/DatePicker";
 import TextArea from "./components/TextArea";
 import Header from './components/Header'
+import Avatar from './components/Avatar'
 
 function App() {
   const action = useNavigationType();
@@ -72,6 +73,7 @@ function App() {
                 flexWrap: 'wrap'
               }}
             >
+              <Avatar  userName="Hello World" />
               <div style={{
                 minWidth: '300px'
               }}>
