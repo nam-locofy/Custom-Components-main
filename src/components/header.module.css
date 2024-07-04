@@ -230,7 +230,6 @@
 .header:hover {
   background-color: #262626;
   display: flex;
-  width: 1440px;
   height: auto;
   flex-direction: row;
   gap: 0px;
