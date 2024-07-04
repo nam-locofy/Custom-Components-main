@@ -35,14 +35,28 @@ const Select: FC<SelectProps> = ({ text = "Select" }) => {
         flex: 1,
         minWidth: "260px",
         display: "inline-flex",
-        "& .MuiInputBase-root": { height: "48px", fontSize: "14px" },
-        "& .MuiInputBase-input": { color: "#383838" },
         fieldset: {
           borderColor: "#383838",
         },
         ":hover fieldset": {
           borderColor: "#1976d2 !important",
         },
+        "& fieldset": { borderColor: "#383838" },
+        "& .MuiInputBase-root": { height: "48px", fontSize: "14px", flex: 1 },
+        "& .MuiInputBase-input": { color: "#383838" },
+        "&:hover fieldset": {
+          borderColor: "#00E377" + "!important",
+        },
+        "&.MuiOutlinedInput-notchedOutline": {
+          borderColor: "#00E377" + "!important",
+        },
+        "&:active fieldset": {
+          borderColor: "#00E377" + "!important",
+        },
+        "outline": "#00E377",
+        "&.Mui-focused fieldset": {
+          borderColor: "#00E377" + "!important",
+        }
       }}
     >
       {options.map((option) => (

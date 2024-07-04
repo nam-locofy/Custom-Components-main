@@ -43,19 +43,38 @@ const DatePicker = ({ placeholder = "Date" }: Props) => {
               flex: 1,
               display: "inline-flex",
               "& fieldset": { borderColor: "#383838" },
-              "&:hover fieldset": { borderColor: "#1976d2 !important" },
-              "& .MuiInputBase-root": {
-                height: 48,
-                flex: 1,
-              },
-              "& .MuiInputBase-input": {
+              "&.MuiInputBase-input": {
                 color: "#383838",
                 fontSize: 14,
                 fontStyle: "normal",
                 lineHeight: 24,
                 boxSizing: "border-box",
                 height: 48,
+                
               },
+              ":hover fieldset": {
+                borderColor: "#1976d2 !important",
+              },
+              "& .MuiInputBase-root": { height: "48px", fontSize: "14px", flex: 1 },
+              "&:hover fieldset": {
+                borderColor: "#00E377" + "!important",
+              },
+              "&.MuiOutlinedInput-notchedOutline": {
+                borderColor: "#00E377" + "!important",
+              },
+              "&:active fieldset": {
+                borderColor: "#00E377" + "!important",
+              },
+              "outline": "#00E377",
+              "&.Mui-focused fieldset": {
+                borderColor: "#00E377" + "!important",
+              },
+              "& .MuiOutlinedInput-root": {
+                "&.Mui-focused fieldset": {
+                  borderColor: "#00E377" + "!important",
+                  // focus
+                }
+              }
             },
           },
         }}

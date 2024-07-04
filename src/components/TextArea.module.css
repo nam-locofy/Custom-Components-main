@@ -19,9 +19,9 @@
 
 .textarea:hover {
     border: none;
-    border:1px solid #1976d2 !important;
+    border:1px solid #00E377 !important;
 }
 .textarea:focus {
-    outline: 1px solid #1976d2 !important;
-    border:1px solid #1976d2 !important;
+    outline: 1px solid #00E377 !important;
+    border:1px solid #00E377 !important;
   }
